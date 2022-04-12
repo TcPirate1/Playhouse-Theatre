@@ -33,7 +33,7 @@ window.onload = function init() {
             }
 
             if (valid!==false) {
-                document.querySelector('body').innerHTML = '<p>Thank you for register, you will be redirected to the seating layout! (Currently not implemented) for now click <a href="bookings.html">here</a> to go back to the booking page.</p>';
+                document.querySelector('body').innerHTML = '<p>Thank you for registering, you will be redirected to the seating layout! (Currently not implemented) for now click <a href="bookings.html">here</a> to go back to the booking page.</p>';
             }
             return valid;
         };
