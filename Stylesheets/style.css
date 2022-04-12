@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #A87754;
+}
+
+.head {
+    font-family: 'IM Fell French Canon', serif;
+    margin: 0 5% 0.8rem 22%; padding-top: 20px;
+}
+
+.head a{
+    color: black;
+    text-decoration: none;
+}
+
+#navigation {
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 2% 0;
+}
+
+#navigation > li a {
+    color: blue;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#navigation > li :hover, #navigation > li :focus {
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    transition: 0.3s ease-in;
+    background-color: #573014;
+}
+
+/*Background img for pages*/
+.home-page, .shows, .contact, .bookings {
+    height: 760px;
+    background: url(../images/Playhouse-Front-small.png) no-repeat 49%;
+}
+
+/*Hero button*/
+.hero {
+    position: absolute;
+    top: 400px; left: 27%;
+    height: 5rem; width: 16rem;
+    font-family: Arial, Helvetica, sans-serif; font-size: 2rem; font-weight: 550; text-align: center; text-decoration: none;
+    background-color: #A87754; color: black;
+    border-radius: 1rem;
+}
+
+.originalButton {
+    position: absolute;
+    top: 500px; left: 27%;
+    height: 5rem; width: 16rem;
+    background-color: #A87754;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem; font-weight: 550; text-align: center;
+}
+
+.colorButton {
+    position: absolute;
+    top: 600px; left: 27%;
+    height: 5rem; width: 16rem;
+    background-color: #A87754;
+    border-radius: 1rem;
+    font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem; font-weight: 550; text-align: center;
+}
+
+.hero:hover, .hero:focus, .colorButton:hover, .colorButton:focus, .originalButton:hover, .originalButton:focus {
+    background-color: rgba(255, 217, 0, 0.705);
+    box-shadow: 6px 5px 5px rgb(17, 221, 126);
+    cursor: pointer;
+}
+
+/*Images*/
+
+.show-heading {
+    color: white; text-decoration: double underline red;
+    text-align: center;
+    font-size: 3vw; font-weight: bold;
+    padding: 20px;
+}
+
+img {
+    height: 150px;
+    margin: 2% 5% 10px 2%;
+}
+
+figure {
+    display: flex;
+    border-top: 5px solid rgb(243, 179, 41);
+}
+
+figcaption {
+    color: white;
+    font-size: 1.6rem; font-weight: bolder;
+}
+
+.phantom {
+    margin: 2rem;
+}
+.mamma {
+    margin: 2rem;
+}
+.hamilton {
+    margin: 2rem 9rem;
+}
+
+/*Form*/
+form h1 {
+    color: white;
+    padding: 10px 0 10px 40vw;
+}
+form div p {
+    color: rgb(189, 26, 26);
+    font-size: medium;
+    font-weight: bolder;
+}
+form {
+    font-size: large;
+    color: white;
+    padding-top: 20vh;
+}
+form div {
+    margin: 10px 0 10px 10vw;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    font-size: 1.3rem;
+}
+input {
+    padding: 0.7vh;
+}
+
+#sign-in, #register {
+    margin: 10px 0 0 60px;
+    padding: 10px;
+    font-size: large;
+}
+
+#sign-in:hover, #register:hover, #sign-in:focus, #register:focus {
+    background-color: rgb(126, 103, 103);
+    margin: 10px 0 0 60px;
+    padding: 10px;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: small;
+}
+
+/*Footer*/
+footer {
+    font-family: 'IM Fell French Canon',sans-serif; font-size: 2rem; text-align: center; font-style: italic;
+    padding: 2% 0;
+    background-color: #A87754;
+}
+
+footer a {
+    color: #777;
+    font-size: medium;
+    margin-left: 1vw;
+}
+footer a:hover, footer a:focus {
+    color:white;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .head {
+        margin: 0 5% 0.8rem 30%;
+    }
+
+    .hero {
+        left: 33%;
+    }
+
+    .colorButton {
+        left: 33%;
+    }
+
+    .originalButton {
+        left: 33%;
+    }
+
+    img {
+        height: 180px;
+    }
+
+    .phantom {
+        margin: 5rem 2rem;
+    }
+    .mamma {
+        margin: 5rem 0 0 2.6rem;
+    }
+    .hamilton {
+        margin: 5rem 12rem;
+    }
+
+    /*Form*/
+    form div {
+        margin: 10px 0 10px 16vw;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .head {
+        margin: 0 5% 0.8rem 35%;
+    }
+    .hero {
+        left: 35%;
+    }
+
+    .colorButton {
+        left: 35%;
+    }
+
+    .originalButton {
+        left: 35%;
+    }
+    
+    .phantom {
+        margin: 5rem 2rem 0 1.6rem;
+    }
+    .mamma {
+        margin: 6rem 0 0 2.6rem;
+    }
+    .hamilton {
+        margin: 6rem 12rem;
+    }
+
+    /*Form*/
+    form h1 {
+        padding: 10px 0 10px 42vw;
+    }
+    form div {
+        margin: 10px 0 10px 22vw;
+    }
+    
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    #navigation {
+        margin-top: 18px;
+    }
+
+    #navigation > li a {
+        margin-right: 0.8rem;
+    }
+
+    .hero {
+        left: 37%;
+    }
+
+    .colorButton {
+        left: 37%;
+    }
+
+    .originalButton {
+        left: 37%;
+    }
+
+    .phantom {
+        margin: 5rem 2rem 0 10vw;
+    }
+    .mamma {
+        margin: 6rem 0 0 2.6rem;
+    }
+    .hamilton {
+        margin: 6rem 12rem;
+    }
+
+    /*Form*/
+    form h1 {
+        padding: 10px 0 10px 40vw;
+    }
+    form div {
+        margin: 10px 0 10px 25vw;
+    }
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    body {
+        width: 1200px;
+        margin: auto;
+    }
+    .head {
+        margin: 0 5% 0.8rem 2%;
+    }
+    header {
+        display: flex;
+    }
+    #navigation > li {
+        margin-left: 8rem;
+    }
+    .hero {
+        left: 38%;
+    }
+
+    .colorButton {
+        left: 38%;
+    }
+
+    .originalButton {
+        left: 38%;
+    }
+
+    .show-heading {
+        font-size: 2.9vh;
+    }
+    img {
+        height: 180px;
+        margin: 1% 5% 10px 5%;
+    }
+    
+    figcaption {
+        color: white;
+        font-size: 3rem; font-weight: bolder;
+    }
+    
+    .phantom {
+        margin: auto;
+    }
+    .mamma {
+        margin: 100px 150px;
+    }
+    .hamilton {
+        margin: 100px 330px;
+    }
+
+    /*Form*/
+    form h1 {
+        padding: 10px 0 10px 42vw;
+    }
+    form div {
+        margin: 10px 0 10px 30vw;
+    }
+}
+
+@media (min-width: 1800px) {
+    .hero {
+        left: 42%;
+    }
+
+    .colorButton {
+        left: 42%;
+    }
+
+    .originalButton {
+        left: 42%;
+    }
+
+    img {
+        height: 180px;
+        margin: 1% 5% 10px 5%;
+    }
+
+        /*Form*/
+    form h1 {
+        padding: 10px 0 10px 30vw;
+    }
+    form div {
+        margin: 10px 0 10px 22vw;
+    }
+
+    .error {
+        font-size: large;
+    }
+}
