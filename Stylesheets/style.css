@@ -38,9 +38,9 @@ header {
     background-color: #573014;
 }
 
-/*Background img for pages*/
-.home-page, .shows, .contact, .bookings {
-    height: 760px;
+/*img for pages*/
+.home-page, .shows, .contact, .bookings, .register {
+    height: 100vh;
     background: url(../images/Playhouse-Front-small.png) no-repeat 49%;
 }
 
@@ -78,13 +78,13 @@ header {
     cursor: pointer;
 }
 
-/*Images*/
+/*Shows*/
 
 .show-heading {
-    color: white; text-decoration: double underline red;
+    color: black; text-decoration: double underline red;
     text-align: center;
     font-size: 3vw; font-weight: bold;
-    padding: 20px;
+    padding: 26px;
 }
 
 img {
@@ -93,23 +93,13 @@ img {
 }
 
 figure {
-    display: flex;
     border-top: 5px solid rgb(243, 179, 41);
 }
 
 figcaption {
     color: white;
-    font-size: 1.6rem; font-weight: bolder;
-}
-
-.phantom {
-    margin: 2rem;
-}
-.mamma {
-    margin: 2rem;
-}
-.hamilton {
-    margin: 2rem 9rem;
+    font-size: 1.1rem; font-weight: bolder;
+    padding: 1vh 0 10px 5px;
 }
 
 /*Form*/
@@ -117,11 +107,7 @@ form h1 {
     color: white;
     padding: 10px 0 10px 40vw;
 }
-form div p {
-    color: rgb(189, 26, 26);
-    font-size: medium;
-    font-weight: bolder;
-}
+
 form {
     font-size: large;
     color: white;
@@ -143,6 +129,7 @@ input {
     margin: 10px 0 0 60px;
     padding: 10px;
     font-size: large;
+    text-decoration: none;
 }
 
 #sign-in:hover, #register:hover, #sign-in:focus, #register:focus {
@@ -155,7 +142,8 @@ input {
 
 .error {
     color: red;
-    font-size: small;
+    font-size: large;
+    font-weight: bolder;
 }
 
 /*Footer*/
@@ -193,22 +181,15 @@ footer a:hover, footer a:focus {
     }
 
     img {
-        height: 180px;
-    }
-
-    .phantom {
-        margin: 5rem 2rem;
-    }
-    .mamma {
-        margin: 5rem 0 0 2.6rem;
-    }
-    .hamilton {
-        margin: 5rem 12rem;
+        height: 160px;
     }
 
     /*Form*/
     form div {
         margin: 10px 0 10px 16vw;
+    }
+    .message {
+        padding-right: 10%;
     }
 }
 
@@ -229,15 +210,6 @@ footer a:hover, footer a:focus {
         left: 35%;
     }
     
-    .phantom {
-        margin: 5rem 2rem 0 1.6rem;
-    }
-    .mamma {
-        margin: 6rem 0 0 2.6rem;
-    }
-    .hamilton {
-        margin: 6rem 12rem;
-    }
 
     /*Form*/
     form h1 {
@@ -245,6 +217,9 @@ footer a:hover, footer a:focus {
     }
     form div {
         margin: 10px 0 10px 22vw;
+    }
+    .message {
+        margin-left: 10%;
     }
     
 }
@@ -272,15 +247,6 @@ footer a:hover, footer a:focus {
         left: 37%;
     }
 
-    .phantom {
-        margin: 5rem 2rem 0 10vw;
-    }
-    .mamma {
-        margin: 6rem 0 0 2.6rem;
-    }
-    .hamilton {
-        margin: 6rem 12rem;
-    }
 
     /*Form*/
     form h1 {
@@ -325,20 +291,8 @@ footer a:hover, footer a:focus {
         height: 180px;
         margin: 1% 5% 10px 5%;
     }
-    
-    figcaption {
-        color: white;
-        font-size: 3rem; font-weight: bolder;
-    }
-    
-    .phantom {
-        margin: auto;
-    }
-    .mamma {
-        margin: 100px 150px;
-    }
-    .hamilton {
-        margin: 100px 330px;
+    figure {
+        display: flex;
     }
 
     /*Form*/
