@@ -132,6 +132,10 @@ input {
     text-decoration: none;
 }
 
+.register h1 {
+    font-size: 5vw;
+}
+
 #sign-in:hover, #register:hover, #sign-in:focus, #register:focus {
     background-color: rgb(126, 103, 103);
     margin: 10px 0 0 60px;
@@ -190,6 +194,9 @@ footer a:hover, footer a:focus {
     }
     .message {
         padding-right: 10%;
+    }
+    .register h1 {
+        font-size: 4.3vw;
     }
 }
 
@@ -302,6 +309,10 @@ footer a:hover, footer a:focus {
     form div {
         margin: 10px 0 10px 30vw;
     }
+
+    .register h1 {
+        font-size: 3.8vw;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -332,5 +343,9 @@ footer a:hover, footer a:focus {
 
     .error {
         font-size: medium;
+    }
+
+    .register h1 {
+        font-size: 3vw;
     }
 }
