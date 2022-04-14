@@ -134,6 +134,7 @@ input {
 
 .register h1 {
     font-size: 5vw;
+    color: white;
 }
 
 #sign-in:hover, #register:hover, #sign-in:focus, #register:focus {
