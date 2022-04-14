@@ -40,7 +40,7 @@ header {
 
 /*img for pages*/
 .home-page, .shows, .contact, .bookings, .register {
-    height: 100vh;
+    height: 80vh;
     background: url(../images/Playhouse-Front-small.png) no-repeat 49%;
 }
 
@@ -81,7 +81,7 @@ header {
 /*Shows*/
 
 .show-heading {
-    color: black; text-decoration: double underline red;
+    color: white; text-decoration: double underline red;
     text-align: center;
     font-size: 3vw; font-weight: bold;
     padding: 26px;
