@@ -14,8 +14,23 @@ class Paragraph extends React.Component {
     }
 }
 
+class Square extends React.Component {
+    render() {
+        let squareStyle = {
+            width:"100%",
+            margin:"auto",
+            textAlign:"center",
+        };
+        return (
+            <div style={squareStyle}>
+            <Paragraph/>
+            </div>
+        );
+    }
+}
+
 ReactDOM.render(
     <div>
-        <Paragraph/>
+        <Square/>
     </div>, document.querySelector(".contact")
 );
