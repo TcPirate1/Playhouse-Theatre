@@ -8,6 +8,11 @@ header {
     background-color: #A87754;
 }
 
+body {
+    position: relative;
+    min-height: 100%;
+}
+
 .head {
     font-family: 'IM Fell French Canon', serif;
     margin: 0 5% 0.8rem 22%; padding-top: 20px;
@@ -40,32 +45,33 @@ header {
 
 /*img for pages*/
 .home-page, .shows, .contact, .bookings, .register {
-    height: 80vh;
-    background: url(../images/Playhouse-Front-small.png) no-repeat 49%;
+    height: 100vh;
+    background: url(../images/Playhouse-Front-small.png) no-repeat 47%;
+    background-size: cover;
 }
 
 /*Hero button*/
 .hero {
     position: absolute;
-    top: 400px; left: 27%;
+    top: 25%; left: 27%;
     height: 5rem; width: 16rem;
     font-family: Arial, Helvetica, sans-serif; font-size: 2rem; font-weight: 550; text-align: center; text-decoration: none;
     background-color: #A87754; color: black;
     border-radius: 1rem;
 }
 
-.originalButton {
+.colorButton {
     position: absolute;
-    top: 500px; left: 27%;
+    top: 40%; left: 27%;
     height: 5rem; width: 16rem;
     background-color: #A87754;
     border-radius: 1rem;
     font-family: Arial, Helvetica, sans-serif; font-size: 1.2rem; font-weight: 550; text-align: center;
 }
 
-.colorButton {
+.originalButton {
     position: absolute;
-    top: 600px; left: 27%;
+    top: 55%; left: 27%;
     height: 5rem; width: 16rem;
     background-color: #A87754;
     border-radius: 1rem;
@@ -88,8 +94,8 @@ header {
 }
 
 img {
-    height: 150px;
-    margin: 2% 5% 10px 2%;
+    height: 15vh;
+    margin: 2% 5% 10px 30%;
 }
 
 figure {
@@ -153,6 +159,7 @@ input {
 
 /*Footer*/
 footer {
+    position: relative;
     font-family: 'IM Fell French Canon',sans-serif; font-size: 2rem; text-align: center; font-style: italic;
     padding: 2% 0;
     background-color: #A87754;
@@ -183,10 +190,6 @@ footer a:hover, footer a:focus {
 
     .originalButton {
         left: 33%;
-    }
-
-    img {
-        height: 160px;
     }
 
     /*Form*/
@@ -295,8 +298,9 @@ footer a:hover, footer a:focus {
     .show-heading {
         font-size: 2.9vh;
     }
+
     img {
-        height: 180px;
+        height: 22vh;
         margin: 1% 5% 10px 5%;
     }
     figure {
@@ -330,7 +334,6 @@ footer a:hover, footer a:focus {
     }
 
     img {
-        height: 180px;
         margin: 1% 5% 10px 5%;
     }
 
