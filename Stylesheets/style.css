@@ -8,11 +8,6 @@ header {
     background-color: #A87754;
 }
 
-body {
-    position: relative;
-    min-height: 100%;
-}
-
 .head {
     font-family: 'IM Fell French Canon', serif;
     margin: 0 5% 0.8rem 22%; padding-top: 20px;
@@ -44,10 +39,12 @@ body {
 }
 
 /*img for pages*/
-.home-page, .shows, .contact, .bookings, .register {
+.background {
     height: 100vh;
-    background: url(../images/Playhouse-Front-small.png) no-repeat 47%;
-    background-size: cover;
+    width: 100%;
+    margin: 0;
+    /* background: url(../images/Playhouse-Front-small.png) no-repeat 47%;
+    background-size: cover; */
 }
 
 /*Hero button*/
@@ -86,6 +83,11 @@ body {
 
 /*Shows*/
 
+.shows {
+    position: absolute;
+    top: 13vh;
+}
+
 .show-heading {
     color: white; text-decoration: double underline red;
     text-align: center;
@@ -100,6 +102,7 @@ img {
 
 figure {
     border-top: 5px solid rgb(243, 179, 41);
+    max-width: 1200px;
 }
 
 figcaption {
@@ -109,6 +112,13 @@ figcaption {
 }
 
 /*Form*/
+
+.bookings {
+    position: absolute;
+    top: 15vh;
+    max-width: 1200px;
+}
+
 form h1 {
     color: white;
     padding: 10px 0 10px 40vw;
@@ -138,11 +148,6 @@ input {
     text-decoration: none;
 }
 
-.register h1 {
-    font-size: 5vw;
-    color: white;
-}
-
 #sign-in:hover, #register:hover, #sign-in:focus, #register:focus {
     background-color: rgb(126, 103, 103);
     margin: 10px 0 0 60px;
@@ -155,6 +160,12 @@ input {
     color: red;
     font-size: large;
     font-weight: bolder;
+}
+/*Contact us*/
+.contact {
+    height: 100vh;
+    background: url(../images/Playhouse-Front-small.png) no-repeat 47%;
+    background-size: cover;
 }
 
 /*Footer*/
