@@ -9,7 +9,7 @@ class Paragraph extends React.Component {
             fontSize:"1.4rem",
         };
         return (
-            <p style={pStyle}>Please Contact our friendly staff on <a href="#">0800 658 795</a> if there are any problems!</p>
+            <p style={pStyle}>Please Contact our friendly staff on <a href="#">0800 658 795</a> if there are any problems! We will endeavour to help!</p>
         );
     }
 }
